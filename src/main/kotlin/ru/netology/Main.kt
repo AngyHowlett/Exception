@@ -6,7 +6,7 @@ fun main() {
 
     val archiveAttachments = ArchiveAttachments(archive = Archive(17, 17, "abc", 171))
     val audioAttachments = AudioAttachments(audio = Audio(18, 18, "abcd", "1"))
-    val documentAttachments = DocumentAttachments(document = Document(19, 19, "doc", "2022"))
+    DocumentAttachments(document = Document(19, 19, "doc", "2022"))
     val photoAttachments = PhotoAttachments(photo = Photo(17, 17, "abc", "1920"))
     val videoAttachments = VideoAttachments(video = Video(1, 12, "a", 123))
 
