@@ -22,11 +22,10 @@ object WallService {
         for (postArr in posts) {
             if (comment.postId == postArr.id) {
                 comments += comment
-            } 
-                
-            
+            } else {
+                throw PostNotFoundException("Post is not found")
+            }
         }
-        throw PostNotFoundException("Post is not found")
         return comments.last()
     }
 
